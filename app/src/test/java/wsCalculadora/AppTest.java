@@ -6,9 +6,17 @@ package wsCalculadora;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeAll;
+
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    static Calculadora c;
+
+    @BeforeAll public static void setUp() {
+        c = new Calculadora();
     }
+    
+    @Test void testSuma() {
+        assertTrue(c.suma(2.0,3.0)==5.0);
+    }
+
 }
