@@ -14,11 +14,7 @@ class AppTest {
     @BeforeAll public static void setUp() {
         c = new Calculadora();
     }
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
-    }
-
+    
     @Test void testSuma() {
         assertTrue(c.suma(2.0,3.0)==5.0);
     }
