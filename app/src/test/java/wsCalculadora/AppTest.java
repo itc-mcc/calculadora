@@ -20,7 +20,7 @@ class AppTest {
     }
 
     @Test void testResta() {
-        assertTrue(c.resta(4.0,3.0)==1.0);
+        assertTrue(c.resta(10.0,7.0)==3.0);
     }
 
 }
