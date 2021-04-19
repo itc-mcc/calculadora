@@ -27,7 +27,7 @@ jobs:
     - name: Testing with Gradle
       run: ./gradlew test
   build:
-
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -43,7 +43,7 @@ jobs:
       run: ./gradlew build
       
   run:
-
+    needs: build
     runs-on: ubuntu-latest
 
     steps:
