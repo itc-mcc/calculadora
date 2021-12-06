@@ -19,4 +19,8 @@ class AppTest {
         assertTrue(c.suma(2.0,3.0)==5.0);
     }
 
+    @Test void testResta() {
+        assertTrue(c.resta(2.0,3.0)==-1.0);
+    }
+
 }
