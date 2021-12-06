@@ -7,7 +7,7 @@ public class Calculadora {
 	}
 
     public double resta(double x, double y) {
-        return 0;
+        return x-y;
     }
 
 }
